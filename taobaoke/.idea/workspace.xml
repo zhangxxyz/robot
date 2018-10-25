@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f4913fb-b9cc-4fc1-b5a5-324983f63a64" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="296646256">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gif" value="1" />
+          <entry key="py" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="1" />
+          <entry key="Python" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="1565" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1565" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-166071190">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1547664759">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="biji" value="2" />
+          <entry key="png" value="3" />
+          <entry key="py" value="65" />
+          <entry key="pyi" value="1" />
+          <entry key="sqlite" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="65" />
+          <entry key="PythonStub" value="1" />
+          <entry key="SQL" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="biji" value="4" />
+          <entry key="dummy" value="1" />
+          <entry key="py" value="13140" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Python" value="13140" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-231063419">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="10342" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="10342" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="35" />
+          <entry key="pyi" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="35" />
+          <entry key="PythonStub" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="2114310489">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="710" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="710" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weichatRobot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1540094105054" expanded="true" signature="13821:13833" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zk_WiChatReplay.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-36">
+              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ZK_QueryOrder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1071">
+              <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ZK_Model/goodsModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/queryGoods.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2574">
+              <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+              <folding>
+                <element signature="e#111#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ZK_Model/globalModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>c</find>
+      <find>FO</find>
+      <find>conn</find>
+      <find>User</find>
+      <find>orderStatus</find>
+      <find>update</find>
+      <find>loginCallback</find>
+      <find>login</find>
+      <find>400</find>
+      <find>408</find>
+      <find>acqu</find>
+      <find>get</find>
+      <find>4485</find>
+      <find>mkti</find>
+      <find>max</find>
+      <find>mk</find>
+      <find>Remarkname</find>
+      <find>ali</find>
+      <find>alia</find>
+      <find>itchat.set_alias</find>
+      <find>rema</find>
+      <find>fromUse</find>
+      <find>开始回复</find>
+      <find>remar</find>
+      <find>remak</find>
+      <find>RemarkName</find>
+      <find>是的</find>
+      <find>杜</find>
+      <find>杜若</find>
+      <find>pub_share_pre_fee</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/queryQuan.py" />
+        <option value="$PROJECT_DIR$/biji" />
+        <option value="$PROJECT_DIR$/messReplay.py" />
+        <option value="$PROJECT_DIR$/model/ModelTool.py" />
+        <option value="$PROJECT_DIR$/model/goodsModel.py" />
+        <option value="$PROJECT_DIR$/changTuiGuangHttp.py" />
+        <option value="$PROJECT_DIR$/model/globalModel.py" />
+        <option value="$PROJECT_DIR$/ZKQueryOrder.py" />
+        <option value="$PROJECT_DIR$/model/ZKOrderDataModel.py" />
+        <option value="$PROJECT_DIR$/other/biji" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/ZK_Model/goodsModel.py" />
+        <option value="$PROJECT_DIR$/other/getPIDFromExcel.py" />
+        <option value="$PROJECT_DIR$/queryGoods.py" />
+        <option value="$PROJECT_DIR$/zk_WiChatReplay.py" />
+        <option value="$PROJECT_DIR$/ZK_QueryOrder.py" />
+        <option value="$PROJECT_DIR$/weichatRobot.py" />
+        <option value="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="547" />
+    <option name="y" value="81" />
+    <option name="width" value="1762" />
+    <option name="height" value="975" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="taobaoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taobaoke" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taobaoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taobaoke" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taobaoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taobaoke" type="462c0819:PsiDirectoryNode" />
+              <item name="ZK_Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../other" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/other" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.weichatRobot">
+    <configuration name="ZK_QueryOrder" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="taobaoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ZK_QueryOrder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="taobaoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getPIDFromExcel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="taobaoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/other" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/other/getPIDFromExcel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="goodsModel (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="taobaoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ZK_Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ZK_Model/goodsModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="weichatRobot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="taobaoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weichatRobot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.weichatRobot" />
+      <item itemvalue="Python.goodsModel (1)" />
+      <item itemvalue="Python.getPIDFromExcel" />
+      <item itemvalue="Python.ZK_QueryOrder" />
+      <item itemvalue="Python.__init__" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.weichatRobot" />
+        <item itemvalue="Python.getPIDFromExcel" />
+        <item itemvalue="Python.goodsModel (1)" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.ZK_QueryOrder" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f4913fb-b9cc-4fc1-b5a5-324983f63a64" name="Default Changelist" comment="" />
+      <created>1537884417317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537884417317</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1857" height="1212" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49448124" visible="true" weight="0.06543075" />
+      <window_info id="Structure" order="1" sideWeight="0.50551873" side_tool="true" weight="0.12520194" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32980332" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49761903" visible="true" weight="0.2939002" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39788198" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3298193" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50238097" side_tool="true" weight="0.4644478" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12603387" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.25531915" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50080776" side_tool="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/messReplay.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/components/messages.py" />
+    <entry file="file://$PROJECT_DIR$/180925-233807.gif" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/requests/models.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/json/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/ZK_Model/ModelTool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/utils.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/storage/templates.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/components/contact.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/Crypto/PublicKey/RSA.py" />
+    <entry file="file://$PROJECT_DIR$/changTuiGuangHttp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queryQuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZK_Model/user.sqlite" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/ext/baked.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/__init__.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/events.py" />
+    <entry file="file://$PROJECT_DIR$/top/api/rest/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pandas/io/pytables.py" />
+    <entry file="file://$PROJECT_DIR$/top/api/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4679">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/expression.py" />
+    <entry file="file://$PROJECT_DIR$/other/biji">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/ext/declarative/api.py" />
+    <entry file="file://$PROJECT_DIR$/other/user.sqlite" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py" />
+    <entry file="file://$USER_HOME$/python/myPython/ziru.py" />
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/815685818/time.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/threading.py" />
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/815685818/builtins.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/components/__init__.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/log.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/content.py" />
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/components/login.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1141" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/815685818/_datetime.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/query.py" />
+    <entry file="file://$PROJECT_DIR$/other/getPIDFromExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/__init__.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/itchat/core.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/functions.py" />
+    <entry file="file://$PROJECT_DIR$/ZK_Model/goodsModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queryGoods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+          <folding>
+            <element signature="e#111#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZK_Model/globalModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZK_QueryOrder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zk_WiChatReplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weichatRobot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1540094105054" expanded="true" signature="13821:13833" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
