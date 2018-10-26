@@ -48,35 +48,52 @@ def other_replay(content):
     msg = ""
     print(content.text)
     if str(content.text) == '提现':
-        data = sqlModel.select(
-            [sqlModel.alreadyOrder]).where(sqlModel.and_(sqlModel.alreadyOrder.drawTime != 1, sqlModel.alreadyOrder.adzone_id == content.User.RemarkName,sqlModel.or_(sqlModel.alreadyOrder.tk_status == 3,sqlModel.alreadyOrder.tk_status == 14)))
-        result = sqlModel.engine.connect().execute(data)
-        totalMoney = 0.00
-        sqlArray = []
-        for i in result:
-            totalMoney += float(i.returnMoney)
-            re = sqlModel.update(sqlModel.alreadyOrder).where(sqlModel.alreadyOrder.trade_id == i.trade_id).values(drawTime = '2')
-            sqlArray.append(re)
-            print(i)
-        for i in sqlArray:
-            sqlModel.engine.connect().execute(i)
+        return drawMoney(content)
+    if str(content.text).isdigit() and len(content.text) == 18:
+        bind_Order(content)
 
-        if float(totalMoney)>0:
-            re =sqlModel.select([sqlModel.drawMoneyRecord]).where(sqlModel.drawMoneyRecord.adzoneid == content.User.RemarkName)
-            res = sqlModel.engine.connect().execute(re).first()
-            if res:
-                sq =sqlModel.update(sqlModel.drawMoneyRecord).where(sqlModel.drawMoneyRecord.adzoneid == content.User.RemarkName).values(drawTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())),drawMoney = str(totalMoney),isSuccess='0')
-                sqlModel.engine.connect().execute(sq)
-            else:
-                record =  sqlModel.drawMoneyRecord()
-                record.drawTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-                record.drawMoney = str(totalMoney)
-                record.isSuccess = '0'
-                record.adzoneid = content.User.RemarkName
-                record.saveData(record)
-            msg= '◇ ◇ ◇ 申 请 成 功 ◇ ◇ ◇ ' + '\n' + ' 【金额】:' + str(
-            totalMoney) + '元' + '\n' + '  工作人员会在一到三个工作日内处理' + '\n' + '◇ ◇ ◇ 温馨提示 ◇ ◇ ◇'+'\n'+'  提现发红包是人工客服操作，因提现人数较多需排队处理,请耐心等待哦'
+
+def bind_Order(content):
+    pass
+
+#        提现的操作
+def drawMoney(content):
+    data = sqlModel.select(
+        [sqlModel.alreadyOrder]).where(
+        sqlModel.and_(sqlModel.alreadyOrder.drawTime != 1, sqlModel.alreadyOrder.adzone_id == content.User.RemarkName,
+                      sqlModel.or_(sqlModel.alreadyOrder.tk_status == 3, sqlModel.alreadyOrder.tk_status == 14)))
+    result = sqlModel.engine.connect().execute(data)
+    totalMoney = 0.00
+    sqlArray = []
+    for i in result:
+        totalMoney += float(i.returnMoney)
+        re = sqlModel.update(sqlModel.alreadyOrder).where(sqlModel.alreadyOrder.trade_id == i.trade_id).values(
+            drawTime='2')
+        sqlArray.append(re)
+        print(i)
+    for i in sqlArray:
+        sqlModel.engine.connect().execute(i)
+
+    if float(totalMoney) > 0:
+        re = sqlModel.select([sqlModel.drawMoneyRecord]).where(
+            sqlModel.drawMoneyRecord.adzoneid == content.User.RemarkName)
+        res = sqlModel.engine.connect().execute(re).first()
+        if res:
+            sq = sqlModel.update(sqlModel.drawMoneyRecord).where(
+                sqlModel.drawMoneyRecord.adzoneid == content.User.RemarkName).values(
+                drawTime=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())), drawMoney=str(totalMoney),
+                isSuccess='0')
+            sqlModel.engine.connect().execute(sq)
         else:
-            msg = '抱歉,您当前账户余额为0元,暂时无法提现'
-        if msg:
-            return msg
+            record = sqlModel.drawMoneyRecord()
+            record.drawTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            record.drawMoney = str(totalMoney)
+            record.isSuccess = '0'
+            record.adzoneid = content.User.RemarkName
+            record.saveData(record)
+        msg = '◇ ◇ ◇ 申 请 成 功 ◇ ◇ ◇ ' + '\n' + ' 【金额】:' + str(
+            totalMoney) + '元' + '\n' + '  工作人员会在一到三个工作日内处理' + '\n' + '◇ ◇ ◇ 温馨提示 ◇ ◇ ◇' + '\n' + '  提现发红包是人工客服操作，因提现人数较多需排队处理,请耐心等待哦'
+    else:
+        msg = '抱歉,您当前账户余额为0元,暂时无法提现'
+    if msg:
+        return msg
