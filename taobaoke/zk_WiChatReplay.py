@@ -16,8 +16,9 @@ def successReplay(dict):
         pass
     returnMoney = beforeCouponPrice * float(dict['commission_rate']) / 100
     returnMoney = returnMoneyRate(returnMoney)
-    replay_text = "约返您：" + str('%.2f' % returnMoney) + "  券后：" + str(beforeCouponPrice) + " 復·制这段描述" + '《'+str(dict[
-        'tbk_pwd'])[1:-1] +')' + "后到淘*寳♀"+'\n'+'  收货成功后返利直接划到您当前账户'
+    replay_text = "约返您：" + str('%.2f' % returnMoney) + "  券后：" + str(beforeCouponPrice) + " 復·制这段描述" + '《' + str(dict[
+                                                                                                                     'tbk_pwd'])[
+                                                                                                             1:-1] + ')' + "后到淘*寳♀" + '\n' + '  收货成功后返利直接划到您当前账户'
     return replay_text
 
     pass
@@ -43,20 +44,55 @@ def returnMoneyRate(money):
     if money >= 100:
         scale = 0.32
     return money * scale
+
+
 # 非商品的回复
 def other_replay(content):
     msg = ""
     print(content.text)
-    if str(content.text) == '提现':
-        return drawMoney(content)
+    if str(content.text).strip() == '提现':
+        print(drawMoney(content))
+        msg =  drawMoney(content)
+    print(content.text)
     if str(content.text).isdigit() and len(content.text) == 18:
 
-        bind_Order(content)
+        print(bind_Order(content))
+        msg =  bind_Order(content)
+
+    commandOperate(content)
+    if len(msg):
+        return msg
+# 口令模式 执行一些特殊命令
+def commandOperate(content):
+    print(str(content.text)[0:3])
+    str = str(content.text)[0:3]
+    if str(content.text)[0:3] == 'dos1:':
+        time = str(content.text)[4::]
+        print(time)
 
 
+
+
+
+# 手动绑定订单
 def bind_Order(content):
+    re = sqlModel.update(sqlModel.alreadyOrder).where(sqlModel.alreadyOrder.trade_id == content.text).values(
+        adzone_id = content.User.RemarkName)
+    try:
+        print('开始提交')
+        sqlModel.engine.connect().execute(re)
+        commitdata = commitResult = sqlModel.select([sqlModel.alreadyOrder]).where(sqlModel.and_(sqlModel.alreadyOrder.trade_id==content.text,sqlModel.alreadyOrder.adzone_id == content.User.RemarkName))
+        result = sqlModel.engine.connect().execute(commitdata).first().id
+        print(result)
+        s = '◇ ◇ ◇ 订 单 绑 定 成 功 ◇ ◇ ◇ '+ '  主人,您终于来找奴家了,我还以为您不要我了'
+        return s
+    except Exception as error:
+        print('提交失败')
+        print(error)
+        return '订单绑定失败,暂无该订单,您可以稍等十分钟再重新绑定,或者检查下是否使用了小淘的口令进行购买'
 
-    pass
+
+
 
 #        提现的操作
 def drawMoney(content):
