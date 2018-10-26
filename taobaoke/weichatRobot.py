@@ -278,14 +278,14 @@ def pingMsg():
 def getChatStatus():
     print(threading.currentThread(), '当前线程订单')
     # cleanUseInfo('666')
-    # pingMsg()
+    pingMsg()
     getOrder()
-    # listenOrder()
+    listenOrder()
 
 
 def runChat():
     print(threading.currentThread(), '当前线程聊天')
-    itchat.auto_login(False)
+    itchat.auto_login(True)
     itchat.run(True)
 
 
