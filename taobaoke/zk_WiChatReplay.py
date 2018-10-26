@@ -1,6 +1,8 @@
 import re
 import ZK_Model.ZKOrderDataModel as sqlModel
+import ZK_QueryOrder
 import time
+import ZK_Model.globalModel as globa_Model
 
 
 # 商品为联盟产品的回复
@@ -15,35 +17,14 @@ def successReplay(dict):
     except:
         pass
     returnMoney = beforeCouponPrice * float(dict['commission_rate']) / 100
-    returnMoney = returnMoneyRate(returnMoney)
+    returnMoney = globa_Model.returnMoneyRate(returnMoney)
     replay_text = "约返您：" + str('%.2f' % returnMoney) + "  券后：" + str(beforeCouponPrice) + " 復·制这段描述" + '《' + str(dict[
                                                                                                                      'tbk_pwd'])[
-                                                                                                             1:-1] + ')' + "后到淘*寳♀" + '\n' + '  收货成功后返利直接划到您当前账户'
+                                                                                                         1:-1] + ')' + "后到淘*寳♀" + '\n' + '  收货成功后返利直接划到您当前账户'
     return replay_text
 
     pass
 
-
-# 返利分级
-def returnMoneyRate(money):
-    scale = 0.00
-    if money < 0.1:
-        scale = 0.9
-    if 0.1 <= money < 1:
-        scale = 0.85
-    if 1 <= money < 5:
-        scale = 0.7
-    if 5 <= money < 10:
-        scale = 0.55
-    if 10 <= money < 20:
-        scale = 0.5
-    if 20 <= money < 50:
-        scale = 0.4
-    if 50 <= money < 100:
-        scale = 0.35
-    if money >= 100:
-        scale = 0.32
-    return money * scale
 
 
 # 非商品的回复
@@ -56,19 +37,33 @@ def other_replay(content):
     print(content.text)
     if str(content.text).isdigit() and len(content.text) == 18:
 
-        print(bind_Order(content))
+        print(bind_Order(content),)
         msg =  bind_Order(content)
-
-    commandOperate(content)
+    # 二次补订单 cm1：后面为开始时间和结束时间，中间以都好分割，若为20分钟以内则结束时间为： 时间格式为2018-10-11 10:10:30
+    if content.text[0:5] == 'cmd1:':
+        msg = commandOperate(content)
     if len(msg):
         return msg
+
+
+
 # 口令模式 执行一些特殊命令
 def commandOperate(content):
-    print(str(content.text)[0:3])
-    str = str(content.text)[0:3]
-    if str(content.text)[0:3] == 'dos1:':
-        time = str(content.text)[4::]
-        print(time)
+    try:
+        timeStr = str(content.text)[5::]
+        timeArray = str(timeStr).split(',')
+        print(timeArray,'时间数组')
+        beginTime = timeArray[0]
+        if not str(timeArray[1])==':':
+            fishTime = str(timeArray[1])
+        else:
+            fishTime = None
+        result = ZK_QueryOrder.customQueryOrder(startTime=str(beginTime),endTime=fishTime)
+        print(result,'查询口令模式完成')
+        return result
+    except Exception as error:
+        print(error)
+        return '补单出错'
 
 
 
@@ -135,3 +130,6 @@ def drawMoney(content):
         msg = '抱歉,您当前账户余额为0元,暂时无法提现'
     if msg:
         return msg
+
+
+

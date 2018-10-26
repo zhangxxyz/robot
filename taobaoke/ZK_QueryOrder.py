@@ -1,49 +1,50 @@
 import top.api
-import ZK_Model.globalModel
 import requests
 import time
 import ZK_Model.ZKOrderDataModel
 import json
 import threading
-from zk_WiChatReplay import returnMoneyRate
+import ZK_Model.globalModel as global_models
+import urllib.parse
 
 sqlModel = ZK_Model.ZKOrderDataModel
 
-queryTime = ""
+
 
 
 # 自定义查询可以输入查询开始时间和结束时间进行查询 格式:2018-10-14 22:49:30
 # 如果不输入结束时间,则默认查询一次开始时间 间隔为1200s
 def customQueryOrder(startTime=None, endTime=None):
-    print(startTime)
-
+    print(startTime,endTime,'自定义查询订单')
+    modelArray =[]
     t = time.strptime(startTime, '%Y-%m-%d %H:%M:%S')
     startTimeStamp = time.mktime(t)
     if not endTime:
-        endTimeStamp = startTimeStamp + 1200
+        endTimeStamp = startTimeStamp + 1198
     else:
         e = time.strptime(endTime, '%Y-%m-%d %H:%M:%S')
         endTimeStamp = time.mktime(e)
     while startTimeStamp < endTimeStamp:
-        currentTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(startTimeStamp))
-        url = 'http://apiorder.vephp.com/order?vekey=' + ZK_Model.globalModel.vekey + '&start_time=' + str(
-            currentTime) + '&span=1200'
-        print(url, currentTime)
+        current = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(startTimeStamp))
+        url = 'http://apiorder.vephp.com/order?vekey=' + global_models.vekey + '&start_time='+str(current) + '&span=1200'
+        print(url, current)
         print('自定义查询')
         try:
             resp = requests.get(url)
             dict = resp.json()
             print(dict)
             if dict['data']:
-                pass
-            #     saveUserOrder(dict['data'])
-            # orderReplay(dict['data'])
+                orderArray = saveUserOrder(dict['data'])
+                modelArray.extend(modelArray)
 
         except Exception as Error:
             print('自定义查询出错')
             print(Error)
 
-        startTimeStamp += 1200
+        startTimeStamp += 1198
+
+    successMsg = "补单成功:共{}条新数据".format(len(modelArray))
+    return successMsg
 
 
 # 循环查询函数
@@ -53,7 +54,8 @@ def queryAllOdrder():
 
     # currentTime = '2018-10-20 15:05:00'
     # print(currentTime)
-    url = 'http://apiorder.vephp.com/order?vekey=' + ZK_Model.globalModel.vekey + '&start_time=' + str(
+    currentTime = urllib.parse.quote(currentTime)
+    url = 'http://apiorder.vephp.com/order?vekey=' + global_models.vekey + '&start_time=' + str(
         currentTime) + '&span=1200'
     print(url, currentTime)
     print('循环查询')
@@ -85,7 +87,7 @@ def saveUserOrder(data):
         except:
             sourceArray.append(dict)
             order = sqlModel.alreadyOrder()
-            order.returnMoney = str('%.2f' % returnMoneyRate(float(dict.get('pub_share_pre_fee',"0"))))
+            order.returnMoney = str('%.2f' % global_models.returnMoneyRate(float(dict.get('pub_share_pre_fee',"0"))))
             order.adzone_id = dict.get('adzone_id',None)
             order.adzone_name = dict.get('adzone_name',None)
             order.alipay_total_price = dict.get('alipay_total_price',None)
@@ -138,7 +140,7 @@ def listenOrder():
         t = time.strptime(order.create_time, '%Y-%m-%d %H:%M:%S')
         startTimeStamp = time.mktime(t) - 600
         currentTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(startTimeStamp))
-        url = 'http://apiorder.vephp.com/order?vekey=' + ZK_Model.globalModel.vekey + '&start_time=' + str(
+        url = 'http://apiorder.vephp.com/order?vekey=' + global_models.vekey + '&start_time=' + str(
             currentTime) + '&span=1200'
         print('监听订单查询')
         try:

@@ -79,7 +79,7 @@ def text_reply(msg):
         temp = zk_WiChatReplay.other_replay(msg)
         if temp:
             replayMsg = temp
-        # return replayMsg
+        return replayMsg
 
 
 # @itchat.msg_register([PICTURE, RECORDING, ATTACHMENT, VIDEO])
@@ -132,7 +132,7 @@ def orderReplay(order, finish_order=None):
                 print(friend)
                 if friend:
                     break
-            returnMoney = zk_WiChatReplay.returnMoneyRate(float(dict['pub_share_pre_fee']))
+            returnMoney = zk_WiChatReplay.globa_Model.returnMoneyRate(float(dict['pub_share_pre_fee']))
             print(orderStatus, type(orderStatus))
             if orderStatus == 12:
                 msg = '亲爱的' + str(friend[0].NickName) + ':' + '\n' + '' + '  恭喜您下单成功' + '\n' + ' 【商品名称】:' + str(
