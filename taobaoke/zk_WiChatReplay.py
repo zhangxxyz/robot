@@ -50,10 +50,12 @@ def other_replay(content):
     if str(content.text) == '提现':
         return drawMoney(content)
     if str(content.text).isdigit() and len(content.text) == 18:
+
         bind_Order(content)
 
 
 def bind_Order(content):
+
     pass
 
 #        提现的操作
