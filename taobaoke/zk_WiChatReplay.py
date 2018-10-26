@@ -79,7 +79,7 @@ def bind_Order(content):
         commitdata = commitResult = sqlModel.select([sqlModel.alreadyOrder]).where(sqlModel.and_(sqlModel.alreadyOrder.trade_id==content.text,sqlModel.alreadyOrder.adzone_id == content.User.RemarkName))
         result = sqlModel.engine.connect().execute(commitdata).first().id
         print(result)
-        s = '◇ ◇ ◇ 订 单 绑 定 成 功 ◇ ◇ ◇ '+ '  主人,您终于来找奴家了,我还以为您不要我了'
+        s = '◇ ◇ 订 单 绑 定 成 功 ◇ ◇ '+ '\n\n'+ '主人,您终于来找奴家了,我还以为您不要我了,嘤嘤嘤[大哭][大哭][大哭]'
         return s
     except Exception as error:
         print('提交失败')

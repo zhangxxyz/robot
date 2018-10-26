@@ -35,7 +35,7 @@ def customQueryOrder(startTime=None, endTime=None):
             print(dict)
             if dict['data']:
                 orderArray = saveUserOrder(dict['data'])
-                modelArray.extend(modelArray)
+                modelArray.extend(orderArray)
 
         except Exception as Error:
             print('自定义查询出错')
