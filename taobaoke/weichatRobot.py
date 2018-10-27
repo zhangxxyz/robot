@@ -218,7 +218,7 @@ def getFriendData(key, array):
 # 抓订单
 def getOrder():
     global timer
-    timer = threading.Timer(10, getOrder)
+    timer = threading.Timer(590, getOrder)
     timer.setDaemon(True)
     timer.start()
     print('循环抓订单')
@@ -296,7 +296,7 @@ def runChat():
     itchat.run(True)
 
 
-timer = threading.Timer(20, getChatStatus)
+timer = threading.Timer(25, getChatStatus)
 timer.setDaemon(True)
 timer.start()
 p1 = threading.Thread(target=runChat)
