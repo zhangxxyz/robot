@@ -9,6 +9,7 @@ import copy
 import ZK_QueryOrder
 import random
 
+
 sqlModel = ZK_Model.ZKOrderDataModel
 
 
@@ -77,6 +78,7 @@ def text_reply(msg):
         else:
             replayMsg = "抱歉,该商家暂无优惠活动,您可以换一家试试"
         temp = zk_WiChatReplay.other_replay(msg)
+        print('当前要发送的消息',temp)
         if temp:
             replayMsg = temp
         return replayMsg
@@ -116,6 +118,7 @@ def sendAllFriendMsg(content):
 # 关于订单状态变化对应消息的回复 order:刷新的订单数组 finis_order:订单结算完成之后才会有的,数据库数据
 def orderReplay(order, finish_order=None):
     print(order)
+    print(finish_order)
     print("6666")
     for dict in order:
         time.sleep(10)
@@ -136,7 +139,7 @@ def orderReplay(order, finish_order=None):
             print(orderStatus, type(orderStatus))
             if orderStatus == 12:
                 msg = '亲爱的' + str(friend[0].NickName) + ':' + '\n' + '' + '  恭喜您下单成功' + '\n' + ' 【商品名称】:' + str(
-                    dict['item_title']) + '\n' + '  订单结算完成后预计可返:' + str('%.2f' % returnMoney) + '元' + '\n'+'  请注意：返利金额会根据您的付款金额变动而发生变化'+'\n\n'
+                    dict['item_title']) + '\n' + '  订单结算完成后预计可返:' + str('%.2f' % returnMoney) + '元' + '\n'+'  请注意：返利金额会根据您的付款金额变动而发生变化'+'\n'+'------------------'+'\n'+'  下单十分钟内没有收到下单成功的消息,可以发送订单编号手动绑定订单'
                 friend[0].send(msg)
             if orderStatus == 3:
                 msg = '亲爱的' + str(friend[0].NickName) + ':' + '\n' + '' + '  确认收货成功,红包已入账' + '\n' + ' 【商品名称】:' + str(
@@ -214,7 +217,8 @@ def getFriendData(key, array):
 
 # 抓订单
 def getOrder():
-    timer = threading.Timer(555, getOrder)
+    global timer
+    timer = threading.Timer(10, getOrder)
     timer.setDaemon(True)
     timer.start()
     print('循环抓订单')
@@ -223,18 +227,19 @@ def getOrder():
         orderReplay(orderArray)
 
 
+
 # 刷新一遍付款订单的状态
 def listenOrder():
     timeNow = time.time()
     timeNow = time.strftime('%Y%m%d%H:%M:%S', time.localtime(timeNow))
     timeNow = time.strptime(timeNow, '%Y%m%d%H:%M:%S')
-    if timeNow.tm_hour < 16:
-        s = (16 - timeNow.tm_hour) * 3600
+    if timeNow.tm_hour < 15:
+        s = (15 - timeNow.tm_hour) * 3600
     elif timeNow.tm_hour > 19:
         s = (24 - (timeNow.tm_hour - 19)) * 3600
     else:
         print('开始监听订单')
-        s = 24 * 3600
+        s = 48 * 3600
         finish = ZK_QueryOrder.listenOrder()
         if finish:
             try:
@@ -246,9 +251,10 @@ def listenOrder():
                 print(error)
                 pass
     print(s,'当前延迟刷新订单状态的延迟')
-    timer = threading.Timer(s, listenOrder)
-    timer.setDaemon(True)
-    timer.start()
+    global timer1
+    timer1 = threading.Timer(s, listenOrder)
+    timer1.setDaemon(True)
+    timer1.start()
 
 
 def cleanUseInfo(NickName):
@@ -268,9 +274,10 @@ def cleanUseInfo(NickName):
 
 def pingMsg():
     s = random.randint(29,2000)
-    timer = threading.Timer(s, pingMsg)
-    timer.setDaemon(True)
-    timer.start()
+    global timer2
+    timer2 = threading.Timer(s, pingMsg)
+    timer2.setDaemon(True)
+    timer2.start()
     friend = itchat.search_friends(name='44341000355')
     friend[0].send(str(s))
 

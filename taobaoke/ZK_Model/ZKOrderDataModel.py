@@ -66,7 +66,7 @@ class drawMoneyRecord(Base):
     drawTime = Column(String(40))
     # 提现金额
     drawMoney = Column(String(10))
-    # 是否成功 1是 0否
+    # 是否成功 1是 0等待体现
     isSuccess = Column(String(10),default='0')
     # 对应的的adzoneid
     adzoneid = Column(String(32))

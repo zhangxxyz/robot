@@ -54,6 +54,7 @@ def queryAllOdrder():
 
     # currentTime = '2018-10-20 15:05:00'
     # print(currentTime)
+    print('循环查询线程',threading.current_thread(),id(threading.current_thread()))
     currentTime = urllib.parse.quote(currentTime)
     url = 'http://apiorder.vephp.com/order?vekey=' + global_models.vekey + '&start_time=' + str(
         currentTime) + '&span=1200'
@@ -137,8 +138,10 @@ def listenOrder():
     sqlArray = []
     endOrderArray = []
     for order in result:
+        print('查询订单开始睡眠',threading.current_thread(),id(threading.current_thread()))
+        time.sleep(5)
         t = time.strptime(order.create_time, '%Y-%m-%d %H:%M:%S')
-        startTimeStamp = time.mktime(t) - 600
+        startTimeStamp = time.mktime(t) - 200
         currentTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(startTimeStamp))
         url = 'http://apiorder.vephp.com/order?vekey=' + global_models.vekey + '&start_time=' + str(
             currentTime) + '&span=1200'
@@ -156,7 +159,7 @@ def listenOrder():
                                                                                      data['tk_status']),
                                                                                  earning_time=endTime)
                     sqlArray.append(re)
-                if str(data['tk_status']) == '3':
+                if str(data['tk_status']) == '3' and (str(data['trade_id'])==str(order.trade_id)):
                         temp = ([data], order)
                         endOrderArray.append(temp)
 
