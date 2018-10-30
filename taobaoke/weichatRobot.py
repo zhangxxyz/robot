@@ -71,7 +71,6 @@ def text_reply(msg):
     except Exception as Error:
         errDesc = p['error']
         replayMsg = ""
-        # if int(errDesc) == 1:
 
         if int(errDesc) == 6001:
             replayMsg = '您好,分享给我商品链接,我才能帮助您省钱哦～～～'
@@ -121,7 +120,7 @@ def orderReplay(order, finish_order=None):
     print(finish_order)
     print("6666")
     for dict in order:
-        time.sleep(10)
+        time.sleep(3)
         try:
             adzoneid = dict['adzone_id']
             orderStatus = int(dict['tk_status'])
@@ -135,11 +134,11 @@ def orderReplay(order, finish_order=None):
                 print(friend)
                 if friend:
                     break
-            returnMoney = zk_WiChatReplay.globa_Model.returnMoneyRate(float(dict['pub_share_pre_fee']))
+            returnMoney = zk_WiChatReplay.globa_Model.returnMoneyRate(float(dict['pub_share_pre_fee']),item_number=dict.get('item_num',"1"))
             print(orderStatus, type(orderStatus))
             if orderStatus == 12:
                 msg = '亲爱的' + str(friend[0].NickName) + ':' + '\n' + '' + '  恭喜您下单成功' + '\n' + ' 【商品名称】:' + str(
-                    dict['item_title']) + '\n' + '  订单结算完成后预计可返:' + str('%.2f' % returnMoney) + '元' + '\n'+'  请注意：返利金额会根据您的付款金额变动而发生变化'+'\n'+'------------------'+'\n'+'  下单十分钟内没有收到下单成功的消息,可以发送订单编号手动绑定订单'
+                    dict['item_title']) + '\n' + '  订单结算完成后预计可返:' + returnMoney + '元' + '\n'+'  请注意：返利金额会根据您的付款金额变动而发生变化'+'\n'+'------------------'+'\n'+'  下单十分钟内没有收到下单成功的消息,可以发送订单编号手动绑定订单'
                 friend[0].send(msg)
             if orderStatus == 3:
                 msg = '亲爱的' + str(friend[0].NickName) + ':' + '\n' + '' + '  确认收货成功,红包已入账' + '\n' + ' 【商品名称】:' + str(
@@ -273,7 +272,7 @@ def cleanUseInfo(NickName):
 # friend[0].send(msg)
 
 def pingMsg():
-    s = random.randint(29,2000)
+    s = random.randint(20,2000)
     global timer2
     timer2 = threading.Timer(s, pingMsg)
     timer2.setDaemon(True)
@@ -296,6 +295,9 @@ def runChat():
     itchat.run(True)
 
 
+from ZK_Model.globalModel import getGlobalScale
+getGlobalScale()
+# ZK_Model.globalModel.returnMoneyRate(12,10)
 timer = threading.Timer(25, getChatStatus)
 timer.setDaemon(True)
 timer.start()

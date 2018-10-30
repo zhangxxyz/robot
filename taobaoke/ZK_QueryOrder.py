@@ -52,10 +52,10 @@ def queryAllOdrder():
     currentTime = time.time() - 1200
     currentTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(currentTime))
 
-    # currentTime = '2018-10-20 15:05:00'
+    # currentTime = '2018-10-30 21:30:00'
     # print(currentTime)
-    print('循环查询线程',threading.current_thread(),id(threading.current_thread()))
-    currentTime = urllib.parse.quote(currentTime)
+    # print('循环查询线程',threading.current_thread(),id(threading.current_thread()))
+    # currentTime = urllib.parse.quote(currentTime)
     url = 'http://apiorder.vephp.com/order?vekey=' + global_models.vekey + '&start_time=' + str(
         currentTime) + '&span=1200'
     print(url, currentTime)
@@ -88,7 +88,7 @@ def saveUserOrder(data):
         except:
             sourceArray.append(dict)
             order = sqlModel.alreadyOrder()
-            order.returnMoney = str('%.2f' % global_models.returnMoneyRate(float(dict.get('pub_share_pre_fee',"0"))))
+            order.returnMoney = global_models.returnMoneyRate(float(dict.get('pub_share_pre_fee',"0")),item_number=dict.get('item_num',"1"))
             order.adzone_id = dict.get('adzone_id',None)
             order.adzone_name = dict.get('adzone_name',None)
             order.alipay_total_price = dict.get('alipay_total_price',None)
@@ -97,7 +97,7 @@ def saveUserOrder(data):
             order.commission_rate = dict.get('commission_rate', None)
             order.create_time = str(dict.get('create_time',None))
             order.income_rate = dict.get('income_rate',None)
-            order.item_num = dict.get('item_num',None)
+            order.item_num = dict.get('item_num',"1")
             order.item_title = dict.get('item_title',None)
             order.num_iid = dict.get('num_iid',None)
             order.pay_price = dict.get('pay_price',"0")

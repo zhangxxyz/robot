@@ -9,4 +9,3 @@ def get():
             # return i
 
     print(123)
-get()

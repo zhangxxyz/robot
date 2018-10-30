@@ -5,23 +5,35 @@ port = '80'
 pid = "28940900149"
 vekey = "V00000384Y70837048"
 
-# 返利分级
-def returnMoneyRate(money):
+# 返利分级 money:预估收入 item_number:购买数量
+def returnMoneyRate(money,item_number = 1):
+    money = float(money) / float(item_number)
     scale = 0.00
-    if money < 0.1:
-        scale = 0.9
-    if 0.1 <= money < 1:
-        scale = 0.85
-    if 1 <= money < 5:
-        scale = 0.7
-    if 5 <= money < 10:
-        scale = 0.55
-    if 10 <= money < 20:
+    try:
+       for key,values in dictArray.items():
+           print(key,values)
+           if float(money) >= float(key):
+                scale = float(values)
+    except Exception as error:
+        print('获取返利比例出错',error)
         scale = 0.5
-    if 20 <= money < 50:
-        scale = 0.4
-    if 50 <= money < 100:
-        scale = 0.35
-    if money >= 100:
-        scale = 0.32
-    return money * scale
+    returnMoney = money * scale * float(item_number)
+    print(returnMoney)
+    return str('%.2f'%returnMoney)
+
+
+def getGlobalScale():
+    import ZK_Model.ZKOrderDataModel as sqlModel
+    import threading
+    global timer
+    global dictArray
+    dictArray = {}
+
+    timer = threading.Timer(28800,getGlobalScale)
+    re = sqlModel.select([sqlModel.rate])
+    result = sqlModel.engine.connect().execute(re)
+    for i in result:
+        dictArray[i.money] = i.rate
+
+
+

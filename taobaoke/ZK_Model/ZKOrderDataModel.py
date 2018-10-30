@@ -106,6 +106,11 @@ class queryRecord(Base):
         session.commit()
         session.close()
 
+class rate(Base):
+    __tablename__ = "rate"
+    id = Column(Integer, primary_key=True)
+    money = Column(String(20))
+    rate  = Column(String(20))
 
 # 抓取订单
 class alreadyOrder(Base):
@@ -115,7 +120,7 @@ class alreadyOrder(Base):
     alipay_total_price = Column(String(40))
     # 返利金额(经过等级计算之后的金额,是我要返给用户的)
     returnMoney = Column(String(10))
-    # 淘客订单状态，3：订单结算，12：订单付款， 13：订单失效，14：订单成功
+    # 淘客订单状态，  3：订单结算，  12：订单付款，   13：订单失效，  14：订单成功
     tk_status = Column(String(8))
     # 订单状态描述
     tk_statusDesc = Column(String(20))
