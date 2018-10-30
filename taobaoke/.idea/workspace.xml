@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8f4913fb-b9cc-4fc1-b5a5-324983f63a64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZK_Model/globalModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZK_Model/globalModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZK_Model/goodsModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZK_Model/goodsModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZK_QueryOrder.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZK_QueryOrder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weichatRobot.py" beforeDir="false" afterPath="$PROJECT_DIR$/weichatRobot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zk_WiChatReplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/zk_WiChatReplay.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,24 +163,24 @@
     <session id="-801596966">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4413" />
+          <entry key="py" value="4456" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4413" />
+          <entry key="Python" value="4456" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -203,11 +199,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weichatRobot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5490">
-              <caret line="305" lean-forward="true" selection-start-line="305" selection-end-line="305" />
+            <state relative-caret-position="463">
+              <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -230,8 +226,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZK_QueryOrder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1899">
-              <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            <state relative-caret-position="792">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -239,11 +235,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
               <folding>
                 <marker date="1540907885975" expanded="true" signature="2787:2921" ph="..." />
               </folding>
@@ -263,7 +259,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/queryGoods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
+            <state relative-caret-position="2628">
               <caret line="150" column="167" selection-start-line="150" selection-start-column="167" selection-end-line="150" selection-end-column="167" />
               <folding>
                 <element signature="e#111#125#0" expanded="true" />
@@ -275,11 +271,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZK_Model/globalModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-              <folding>
-                <marker date="1540912371593" expanded="true" signature="878:1032" ph="..." />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -295,7 +288,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>max</find>
       <find>mk</find>
       <find>Remarkname</find>
       <find>ali</find>
@@ -325,6 +317,7 @@
       <find>去查询返利比例</find>
       <find>去查寻</find>
       <find>returnMoneyRate</find>
+      <find>开始从数据库查询当前比例</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -348,9 +341,9 @@
         <option value="$PROJECT_DIR$/queryGoods.py" />
         <option value="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" />
         <option value="$PROJECT_DIR$/ZK_QueryOrder.py" />
-        <option value="$PROJECT_DIR$/ZK_Model/globalModel.py" />
         <option value="$PROJECT_DIR$/zk_WiChatReplay.py" />
         <option value="$PROJECT_DIR$/ZK_Model/goodsModel.py" />
+        <option value="$PROJECT_DIR$/ZK_Model/globalModel.py" />
         <option value="$PROJECT_DIR$/weichatRobot.py" />
       </list>
     </option>
@@ -717,6 +710,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QR.png" />
+    <entry file="file://$PROJECT_DIR$/ZK_QueryOrder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding>
+            <marker date="1540907885975" expanded="true" signature="2787:2921" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ZK_Model/goodsModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -726,30 +739,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/queryGoods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
+        <state relative-caret-position="2628">
           <caret line="150" column="167" selection-start-line="150" selection-start-column="167" selection-end-line="150" selection-end-column="167" />
           <folding>
             <element signature="e#111#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ZK_Model/globalModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <marker date="1540912371593" expanded="true" signature="878:1032" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weichatRobot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5490">
-          <caret line="305" lean-forward="true" selection-start-line="305" selection-end-line="305" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,22 +757,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZK_QueryOrder.py">
+    <entry file="file://$PROJECT_DIR$/ZK_Model/globalModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1899">
-          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py">
+    <entry file="file://$PROJECT_DIR$/weichatRobot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        <state relative-caret-position="463">
+          <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
           <folding>
-            <marker date="1540907885975" expanded="true" signature="2787:2921" ph="..." />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

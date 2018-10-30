@@ -9,16 +9,17 @@ vekey = "V00000384Y70837048"
 def returnMoneyRate(money,item_number = 1):
     money = float(money) / float(item_number)
     scale = 0.00
+
     try:
        for key,values in dictArray.items():
-           print(key,values)
+           # print(key,values)
            if float(money) >= float(key):
                 scale = float(values)
     except Exception as error:
         print('获取返利比例出错',error)
         scale = 0.5
+
     returnMoney = money * scale * float(item_number)
-    print(returnMoney)
     return str('%.2f'%returnMoney)
 
 
@@ -28,6 +29,7 @@ def getGlobalScale():
     global timer
     global dictArray
     dictArray = {}
+    print('开始从数据库查询当前比例')
 
     timer = threading.Timer(28800,getGlobalScale)
     re = sqlModel.select([sqlModel.rate])
