@@ -20,8 +20,8 @@ def successReplay(dict):
         pass
     returnMoney = beforeCouponPrice * float(dict['commission_rate']) / 100
     returnMoney = globa_Model.returnMoneyRate(returnMoney)
-    replay_text =  "【券后价格】：" + str(
-        '%.2f'%beforeCouponPrice) + "\n【券后再返】：" + returnMoney + " \n 復·制这段描述" + '《' + str(dict[
+    replay_text =  "【当前价格】：" +str(dict['zk_final_price'])+'元\n'+ "【券后价格】：" + str(
+        '%.2f'%beforeCouponPrice)+ '元\n'+ "【券后再返】：" + returnMoney+ '元\n' + " 復·制这段描述" + '《' + str(dict[
                                                                  'tbk_pwd'])[
                                                          1:-1] + ')' + "后到淘*寳♀" + '\n' + '---------------\n 收货成功后返利直接划到您当前账户'
     return replay_text

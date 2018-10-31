@@ -67,11 +67,11 @@ def text_reply(msg):
     try:
         if p['result']:
             replayContent = zk_WiChatReplay.successReplay(p['data'])
+            print(replayContent)
             return replayContent
     except Exception as Error:
         errDesc = p['error']
         replayMsg = ""
-
         if int(errDesc) == 6001:
             replayMsg = '您好,分享给我商品链接,我才能帮助您省钱哦～～～'
         else:
@@ -217,7 +217,7 @@ def getFriendData(key, array):
 # 抓订单
 def getOrder():
     global timer
-    timer = threading.Timer(590, getOrder)
+    timer = threading.Timer(540, getOrder)
     timer.setDaemon(True)
     timer.start()
     print('循环抓订单')
