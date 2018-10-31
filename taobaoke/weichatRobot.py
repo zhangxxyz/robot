@@ -296,7 +296,6 @@ def runChat():
 
 
 from ZK_Model.globalModel import getGlobalScale
-getGlobalScale()
 ZK_Model.globalModel.returnMoneyRate(22,10)
 timer = threading.Timer(25, getChatStatus)
 timer.setDaemon(True)
