@@ -21,6 +21,7 @@ def returnMoneyRate(money,item_number = 1):
     except Exception as error:
         print('获取返利比例出错',error)
         scale = 0.5
+    print(money,scale,float(item_number))
     returnMoney = money * scale * float(item_number)
     return str('%.2f'%returnMoney)
 

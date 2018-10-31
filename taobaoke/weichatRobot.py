@@ -286,7 +286,7 @@ def getChatStatus():
     # cleanUseInfo('666')
     pingMsg()
     getOrder()
-    listenOrder()
+    # listenOrder()
 
 
 def runChat():
