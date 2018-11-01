@@ -68,7 +68,7 @@ def text_reply(msg):
         if p['result']:
             replayContent = zk_WiChatReplay.successReplay(p['data'])
             print(replayContent)
-            return replayContent
+            # return replayContent
     except Exception as Error:
         errDesc = p['error']
         replayMsg = ""
@@ -80,7 +80,7 @@ def text_reply(msg):
         print('当前要发送的消息',temp)
         if temp:
             replayMsg = temp
-        return replayMsg
+        # return replayMsg
 
 
 # @itchat.msg_register([PICTURE, RECORDING, ATTACHMENT, VIDEO])
@@ -113,6 +113,28 @@ def sendAllFriendMsg(content):
     friends = itchat.get_friends(update=True)
     for i in  friends:
         i.send(content)
+
+#   获取聊天群
+def getChatRoom():
+    room = itchat.get_chatrooms(update= True)
+    print('获取聊天群',room)
+    print(room[0].MemberList)
+    print(len(room[0].MemberList))
+    for i in room:
+        print(len(i.MemberList),'群成员总数是')
+        if  not i.MemberList:
+            itchat.update_chatroom(i.UserName, detailedMember=True)
+            getChatRoom()
+        for j in i.MemberList:
+            print(j.UserName,'里卖弄的')
+            print(j.NickName)
+        # itchat.add_friend(i.UserName)
+        print(i.UserName,'外面的')
+        print(i.NickName)
+    # getChatRoom()
+    print(len(room))
+    print('递归结束')
+
 
 # 关于订单状态变化对应消息的回复 order:刷新的订单数组 finis_order:订单结算完成之后才会有的,数据库数据
 def orderReplay(order, finish_order=None):
@@ -283,15 +305,16 @@ def pingMsg():
 
 def getChatStatus():
     print(threading.currentThread(), '当前线程订单')
+    getChatRoom()
     # cleanUseInfo('666')
-    pingMsg()
-    getOrder()
-    listenOrder()
+    # pingMsg()
+    # getOrder()
+    # listenOrder()
 
 
 def runChat():
     print(threading.currentThread(), '当前线程聊天')
-    itchat.auto_login(True)
+    itchat.auto_login(False)
     itchat.run(True)
 
 
