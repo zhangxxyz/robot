@@ -43,9 +43,9 @@ def other_replay(content):
     if content.text[0:5] == 'cmd1:':
         msg = commandOperate(content)
     # if str(content.text).strip() == '帮助':
-    #     msg = '您好,您可以这样说：\n  001:订单统计\n  002:我的邀请\n  003:会员系统'
-    # if str(content.text).strip() == '001':
-    #     msg = order_Statistical(content)
+    #     msg = '您好,您可以这样说：\n  001:订单统计\n  002:我的邀请\n  '
+    if str(content.text).strip() == '查询':
+        msg = order_Statistical(content)
     # if str(content.text).strip() == '002':
     #     msg = myInvite(content)
     if len(msg):
@@ -75,12 +75,19 @@ def order_Statistical(content):
                       sqlModel.alreadyOrder.tk_status != '13'))
     queryRe = sqlModel.engine.connect().execute(re)
 
+    # 总的付款订单
     orderTotal = 0
+    # 成功的订单
     successOrder = 0
+    # 付款但还没结算或者没成功的
     waitIngOrder = 0
+    # 已经提现的
     drawMoneyOrder = 0
+    # 无效的订单 tk_status==13
     failureOrder = 0
+    # 结算完成可以提现的订单
     canDrawMoneyOrder = 0
+    # 提现中的订单12
     drawMoneyZhongOrder = 0
     orderTotalMoney = 0.00
     canDrawMoneyOrderMoney = 0.00
@@ -109,8 +116,8 @@ def order_Statistical(content):
             waitIngOrder += 1
             waitMoney += float(i.returnMoney)
 
-    replay_text = '  您当前共有{}笔订单,其中待收货订单为{}笔,可返您{}元,已收货订单为{}笔,其中{}笔订单已经提现,总金额为{}元,{}笔订单处于提现中,金额为{}元,{}笔订单可提现,金额为{}元'.format(orderTotal,
-                                 waitIngOrder,str('%.2f'%waitMoney),successOrder,drawMoneyOrder,str('%.2f'%drawMoney),drawMoneyZhongOrder,str('%.2f'%drawMoneyZhongMoney),canDrawMoneyOrder,str('%.2f'%canDrawMoneyOrderMoney))
+    replay_text = '【总订单】: {}笔 {}元 \n【未收货】: {}笔 {}元 \n【总提现】: {}笔 {}元 \n【提现中】: {}笔 {}元 \n【可提现】: {}笔 {}元'.format(orderTotal,
+                                str('%.2f'%orderTotalMoney),waitIngOrder,str('%.2f'%waitMoney),drawMoneyOrder,str('%.2f'%drawMoney),drawMoneyZhongOrder,str('%.2f'%drawMoneyZhongMoney),canDrawMoneyOrder,str('%.2f'%canDrawMoneyOrderMoney))
     print(replay_text)
     return replay_text
 

@@ -68,7 +68,7 @@ def text_reply(msg):
         if p['result']:
             replayContent = zk_WiChatReplay.successReplay(p['data'])
             print(replayContent)
-            # return replayContent
+            return replayContent
     except Exception as Error:
         errDesc = p['error']
         replayMsg = ""
@@ -80,7 +80,7 @@ def text_reply(msg):
         print('当前要发送的消息',temp)
         if temp:
             replayMsg = temp
-        # return replayMsg
+        return replayMsg
 
 
 # @itchat.msg_register([PICTURE, RECORDING, ATTACHMENT, VIDEO])
@@ -142,7 +142,7 @@ def orderReplay(order, finish_order=None):
     print(finish_order)
     print("6666")
     for dict in order:
-        time.sleep(3)
+        time.sleep(7)
         try:
             adzoneid = dict['adzone_id']
             orderStatus = int(dict['tk_status'])
@@ -166,7 +166,7 @@ def orderReplay(order, finish_order=None):
                 msg = '亲爱的' + str(friend[0].NickName) + ':' + '\n' + '' + '  确认收货成功,红包已入账' + '\n' + ' 【商品名称】:' + str(
                     dict['item_title']) + '\n' + ' 【完成时间】:' + str(
                     dict.get('earning_time', "null")) + '\n' + ' 【预计可返】:' + str(
-                    finish_order.returnMoney) + '元' + '\n\n' + '  发送"提现"可进行提现操作'
+                    finish_order.returnMoney) + '元' + '\n\n' + '  发送"提现"可进行提现操作\n  发送"查询"可以查看自己的订单统计'
                 print(msg)
                 friend[0].send(msg)
 
@@ -254,13 +254,13 @@ def listenOrder():
     timeNow = time.time()
     timeNow = time.strftime('%Y%m%d%H:%M:%S', time.localtime(timeNow))
     timeNow = time.strptime(timeNow, '%Y%m%d%H:%M:%S')
-    if timeNow.tm_hour < 15:
+    if timeNow.tm_hour < 14:
         s = (15 - timeNow.tm_hour) * 3600
     elif timeNow.tm_hour > 19:
         s = (24 - (timeNow.tm_hour - 19)) * 3600
     else:
         print('开始监听订单')
-        s = 48 * 3600
+        s = 24 * 3600
         finish = ZK_QueryOrder.listenOrder()
         if finish:
             try:
@@ -305,16 +305,16 @@ def pingMsg():
 
 def getChatStatus():
     print(threading.currentThread(), '当前线程订单')
-    getChatRoom()
+    # getChatRoom()
     # cleanUseInfo('666')
-    # pingMsg()
-    # getOrder()
-    # listenOrder()
+    pingMsg()
+    getOrder()
+    listenOrder()
 
 
 def runChat():
     print(threading.currentThread(), '当前线程聊天')
-    itchat.auto_login(False)
+    itchat.auto_login(True)
     itchat.run(True)
 
 
