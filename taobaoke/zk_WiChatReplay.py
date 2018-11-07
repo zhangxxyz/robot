@@ -34,7 +34,7 @@ def other_replay(content):
     msg = ""
     print(content.text)
     if str(content.text).strip() == '提现':
-        print(drawMoney(content))
+        # print(drawMoney(content))
         msg = drawMoney(content)
     print(content.text)
     if str(content.text).isdigit() and len(content.text) == 18:
