@@ -11,7 +11,7 @@ import os
 path = os.path.abspath('.')
 index = path.rfind('taobaoke')
 path = path[0:index]
-path = "mysql+mysqlconnector://root:123456@47.97.111.175:3306/user?charset=utf8mb4"
+path = "mysql+mysqlconnector://root:123456@47.97.111.175:3306/test?charset=utf8mb4"
 
 # path = 'sqlite:///%s/user.sqlite'%path
 print(path)

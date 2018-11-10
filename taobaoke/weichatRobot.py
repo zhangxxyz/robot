@@ -146,6 +146,8 @@ def orderReplay(order, finish_order=None):
         try:
             adzoneid = dict['adzone_id']
             orderStatus = int(dict['tk_status'])
+            if finish_order:
+                adzoneid = finish_order['adzone_id']
             print(adzoneid, orderStatus)
             res = sqlModel.select([sqlModel.userData]).where(sqlModel.userData.useAdzone_id == adzoneid)
             result = sqlModel.engine.connect().execute(res).first()
