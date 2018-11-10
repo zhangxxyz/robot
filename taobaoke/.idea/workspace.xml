@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f4913fb-b9cc-4fc1-b5a5-324983f63a64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weichatRobot.py" beforeDir="false" afterPath="$PROJECT_DIR$/weichatRobot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,12 +174,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5045" />
+          <entry key="py" value="5049" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="5045" />
+          <entry key="Python" value="5049" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -222,8 +221,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weichatRobot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="318" column="26" selection-start-line="318" selection-start-column="26" selection-end-line="318" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="305" lean-forward="true" selection-start-line="305" selection-end-line="305" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -234,8 +233,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zk_WiChatReplay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="992">
-              <caret line="118" column="94" selection-start-line="118" selection-start-column="94" selection-end-line="118" selection-end-column="94" />
+            <state relative-caret-position="-2050">
+              <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -363,12 +362,12 @@
         <option value="$PROJECT_DIR$/ZK_Model/goodsModel.py" />
         <option value="$PROJECT_DIR$/ZK_Model/globalModel.py" />
         <option value="$PROJECT_DIR$/zk_WiChatReplay.py" />
-        <option value="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" />
         <option value="$PROJECT_DIR$/weichatRobot.py" />
+        <option value="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="547" />
     <option name="y" value="81" />
     <option name="width" value="1762" />
@@ -566,7 +565,7 @@
     <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49448124" visible="true" weight="0.11177754" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49448124" visible="true" weight="0.19629225" />
       <window_info id="Structure" order="1" sideWeight="0.50551873" side_tool="true" weight="0.12520194" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -788,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zk_WiChatReplay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="992">
-          <caret line="118" column="94" selection-start-line="118" selection-start-column="94" selection-end-line="118" selection-end-column="94" />
+        <state relative-caret-position="-2050">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -798,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weichatRobot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="318" column="26" selection-start-line="318" selection-start-column="26" selection-end-line="318" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="305" lean-forward="true" selection-start-line="305" selection-end-line="305" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
