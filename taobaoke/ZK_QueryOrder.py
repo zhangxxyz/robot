@@ -52,7 +52,7 @@ def queryAllOdrder():
     currentTime = time.time() - 1200
     currentTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(currentTime))
 
-    # currentTime = '2018-10-30 21:30:00'
+    # currentTime = '2018-11-11 02:40:00'
     # print(currentTime)
     # print('循环查询线程',threading.current_thread(),id(threading.current_thread()))
     # currentTime = urllib.parse.quote(currentTime)
@@ -62,6 +62,7 @@ def queryAllOdrder():
     print('循环查询')
     try:
         resp = requests.get(url)
+        print(resp)
         dict = resp.json()
         print(dict)
         if dict['data']:

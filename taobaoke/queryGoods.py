@@ -35,14 +35,17 @@ tempData2 = {'content': '淘口令  ', 'title': '淘口令-页面',
 # native_url	移动端调起地址
 def taoKouLingChangeHTTP(tkl):
     params = {"tkl": tkl, "user_key": "1gQODe4MGwToFY0j"}
+    dataUrlEndocde = urllib.parse.quote(tkl)
     try:
-        resp = requests.get("http://api.kfsoft.net/api/tb/tklQuery/v1.php", params)
+        resp = requests.get("http://api.kfsoft.net/api/tb/tklQuery/v1.php&user_key=1gQODe4MGwToFY0j&tkl="+dataUrlEndocde)
+        print(resp)
         dict = resp.json()
         print(dict['data'])
         if dict['status'] == "success":
             getGoodsId(dict['data'])
 
     except Exception as error:
+        print('91tool错误')
         print(error)
 
 
@@ -148,7 +151,7 @@ def getGoodsId(data):
 def zhuanLian(data,use_pid=None):
     # data = str(data).encode('utf-8')
     dataUrlEndocde = urllib.parse.quote(data)
-    url = 'http://api.vephp.com/hcapi?vekey=' + ZK_Model.globalModel.vekey + '&para=' + str(dataUrlEndocde) + '&detail=1'+'&pid='+'mm_32900145_121950227_'+str(use_pid)
+    url = 'http://api2.vephp.com/hcapi?vekey=' + ZK_Model.globalModel.vekey + '&para=' + str(dataUrlEndocde) + '&detail=1'+'&pid='+'mm_32900145_121950227_'+str(use_pid)
     print(url)
     try:
         resp = requests.get(url)

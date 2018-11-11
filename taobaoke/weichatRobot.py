@@ -61,9 +61,11 @@ def text_reply(msg):
             rename=result.adzone_id, usePid=result.pid, useAdzone_id=result.adzone_id)
         sqlModel.engine.connect().execute(da)
         return
-
+    if not str(str(msg.text).find('转账')) == '-1':
+        print('发现转账成功字样')
+        return
     p = queryGoods.zhuanLian(str(msg.text), use_pid=msg.User.RemarkName)
-    time.sleep(2)
+    time.sleep(1)
     try:
         if p['result']:
             replayContent = zk_WiChatReplay.successReplay(p['data'])

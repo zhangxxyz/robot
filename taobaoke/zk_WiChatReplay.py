@@ -116,7 +116,7 @@ def order_Statistical(content):
             waitIngOrder += 1
             waitMoney += float(i.returnMoney)
 
-    replay_text = '【总订单】: {}笔 {}元 \n【未收货】: {}笔 {}元 \n【总提现】: {}笔 {}元 \n【提现中】: {}笔 {}元 \n【可提现】: {}笔 {}元'.format(orderTotal,
+    replay_text = '【总订单】: {}笔 {}元 \n【未收货】: {}笔 {}元 \n【已提现】: {}笔 {}元 \n【提现中】: {}笔 {}元 \n【可提现】: {}笔 {}元'.format(orderTotal,
                                 str('%.2f'%orderTotalMoney),waitIngOrder,str('%.2f'%waitMoney),drawMoneyOrder,str('%.2f'%drawMoney),drawMoneyZhongOrder,str('%.2f'%drawMoneyZhongMoney),canDrawMoneyOrder,str('%.2f'%canDrawMoneyOrderMoney))
     print(replay_text)
     return replay_text
