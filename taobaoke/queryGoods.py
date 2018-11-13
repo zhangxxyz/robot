@@ -151,7 +151,7 @@ def getGoodsId(data):
 def zhuanLian(data,use_pid=None):
     # data = str(data).encode('utf-8')
     dataUrlEndocde = urllib.parse.quote(data)
-    url = 'http://api2.vephp.com/hcapi?vekey=' + ZK_Model.globalModel.vekey + '&para=' + str(dataUrlEndocde) + '&detail=1'+'&pid='+'mm_32900145_121950227_'+str(use_pid)
+    url = 'http://api.vephp.com/hcapi?vekey=' + ZK_Model.globalModel.vekey + '&para=' + str(dataUrlEndocde) + '&detail=1'+'&pid='+'mm_32900145_121950227_'+str(use_pid)
     print(url)
     try:
         resp = requests.get(url)
