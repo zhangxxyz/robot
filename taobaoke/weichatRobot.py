@@ -12,6 +12,8 @@ import random
 
 sqlModel = ZK_Model.ZKOrderDataModel
 
+notReturnText = ['发送消息过于频繁','转账','开启了朋友验证']
+
 
 class useInfo(object):
     def __init__(self, **kwargs):
@@ -61,9 +63,10 @@ def text_reply(msg):
             rename=result.adzone_id, usePid=result.pid, useAdzone_id=result.adzone_id)
         sqlModel.engine.connect().execute(da)
         return
-    if not str(str(msg.text).find('转账')) == '-1':
-        print('发现转账成功字样')
-        return
+    for i in notReturnText:
+        if str(str(msg.text)).find(i) >=0:
+            print('发现转账成功字样')
+            return
     p = queryGoods.zhuanLian(str(msg.text), use_pid=msg.User.RemarkName)
     time.sleep(1)
     try:
@@ -258,13 +261,13 @@ def listenOrder():
     timeNow = time.time()
     timeNow = time.strftime('%Y%m%d%H:%M:%S', time.localtime(timeNow))
     timeNow = time.strptime(timeNow, '%Y%m%d%H:%M:%S')
-    if timeNow.tm_hour < 14:
+    if timeNow.tm_hour < 11:
         s = (15 - timeNow.tm_hour) * 3600
-    elif timeNow.tm_hour > 19:
+    elif timeNow.tm_hour > 18:
         s = (24 - (timeNow.tm_hour - 19)) * 3600
     else:
         print('开始监听订单')
-        s = 24 * 3600
+        s = 48 * 3600
         finish = ZK_QueryOrder.listenOrder()
         if finish:
             try:
