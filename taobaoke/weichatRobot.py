@@ -261,13 +261,13 @@ def listenOrder():
     timeNow = time.time()
     timeNow = time.strftime('%Y%m%d%H:%M:%S', time.localtime(timeNow))
     timeNow = time.strptime(timeNow, '%Y%m%d%H:%M:%S')
-    if timeNow.tm_hour < 11:
-        s = (15 - timeNow.tm_hour) * 3600
-    elif timeNow.tm_hour > 18:
+    if timeNow.tm_hour < 14:
+        s = (14 - timeNow.tm_hour) * 3600
+    elif timeNow.tm_hour > 19:
         s = (24 - (timeNow.tm_hour - 19)) * 3600
     else:
         print('开始监听订单')
-        s = 48 * 3600
+        s = 24 * 3600
         finish = ZK_QueryOrder.listenOrder()
         if finish:
             try:
@@ -301,7 +301,7 @@ def cleanUseInfo(NickName):
 # friend[0].send(msg)
 
 def pingMsg():
-    s = random.randint(20,2000)
+    s = random.randint(2,1888)
     global timer2
     timer2 = threading.Timer(s, pingMsg)
     timer2.setDaemon(True)
