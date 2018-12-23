@@ -263,8 +263,8 @@ def listenOrder():
     timeNow = time.strptime(timeNow, '%Y%m%d%H:%M:%S')
     if timeNow.tm_hour < 14:
         s = (14 - timeNow.tm_hour) * 3600
-    elif timeNow.tm_hour > 19:
-        s = (24 - (timeNow.tm_hour - 19)) * 3600
+    elif timeNow.tm_hour > 17:
+        s = (24 - (timeNow.tm_hour - 17)) * 3600
     else:
         print('开始监听订单')
         s = 24 * 3600
