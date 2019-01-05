@@ -99,7 +99,6 @@ def order_Statistical(content):
         orderTotal += 1
         orderTotalMoney += float(i.returnMoney)
         if str(i.tk_status) == '3' or str(i.tk_status) == '14':
-            print('看这里看这里')
             successOrder += 1
             successMoney += float(i.returnMoney)
             if str(i.drawTime) == '1':

@@ -28,27 +28,27 @@ class userData(Base):
     __tablename__ = "userData"
     id = Column(Integer, primary_key=True)
     # 备注
-    rename = Column(String(32))
+    rename = Column(String(320))
     # 昵称
-    NickName = Column(String(40))
+    NickName = Column(String(400))
     # 一个类似于微信号的标识符,注册的比较早的号这个字段直接是微信号,后来的微信这个是一段不变的码
-    WXIDName = Column(String(40))
+    WXIDName = Column(String(400))
     # 微信号
-    WXID = Column(String(32))
+    WXID = Column(String(320))
     # 用户绑定淘宝pid
     usePid = Column(String(120))
     # 用户adconeid
-    useAdzone_id = Column(String(32))
+    useAdzone_id = Column(String(320))
     # 个人签名
     personMood = Column(String(300))
     # 推荐人的微信标识符
-    fromSourceusername = Column(String(30))
+    fromSourceusername = Column(String(300))
     # 推荐人标识符
-    fromNickName = Column(String(32))
+    fromNickName = Column(String(320))
     # 推荐人微信号
-    fromWXID = Column(String(32))
+    fromWXID = Column(String(320))
     # 推荐人备注
-    fromRename = Column(String(32))
+    fromRename = Column(String(320))
     # 推荐人个人签名
     fromWXDetails = Column(String(300))
 
@@ -141,7 +141,7 @@ class alreadyOrder(Base):
     # 商品id
     num_iid = Column(String(40))
     # 商品标题
-    item_title = Column(String(60))
+    item_title = Column(String(600))
     # 商品数量
     item_num = Column(String(10))
     # 单价
