@@ -25,6 +25,7 @@ def customQueryOrder(startTime=None, endTime=None):
         e = time.strptime(endTime, '%Y-%m-%d %H:%M:%S')
         endTimeStamp = time.mktime(e)
     while startTimeStamp < endTimeStamp:
+        time.sleep(1)
         current = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(startTimeStamp))
         url = 'http://apiorder.vephp.com/order?vekey=' + global_models.vekey + '&start_time='+str(current) + '&span=1200'
         print(url, current)
@@ -140,7 +141,7 @@ def listenOrder():
     endOrderArray = []
     for order in result:
         print('查询订单开始睡眠',threading.current_thread(),id(threading.current_thread()))
-        time.sleep(5)
+        time.sleep(1)
         t = time.strptime(order.create_time, '%Y-%m-%d %H:%M:%S')
         startTimeStamp = time.mktime(t) - 200
         currentTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(startTimeStamp))

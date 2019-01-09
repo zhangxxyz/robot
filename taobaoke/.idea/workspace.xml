@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4913fb-b9cc-4fc1-b5a5-324983f63a64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZK_QueryOrder.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZK_QueryOrder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weichatRobot.py" beforeDir="false" afterPath="$PROJECT_DIR$/weichatRobot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zk_WiChatReplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/zk_WiChatReplay.py" afterDir="false" />
     </list>
@@ -232,27 +233,31 @@
     <session id="-1874724794">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="18" />
+          <entry key="py" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="18" />
+          <entry key="Python" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="out" value="1" />
           <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
@@ -263,8 +268,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weichatRobot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="246" column="12" selection-start-line="246" selection-start-column="12" selection-end-line="246" selection-end-column="12" />
+            <state relative-caret-position="138">
+              <caret line="248" column="31" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -273,10 +278,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nohup.out">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zk_WiChatReplay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
+            <state relative-caret-position="126">
+              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -287,8 +301,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZK_QueryOrder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+            <state relative-caret-position="369">
+              <caret line="143" column="21" lean-forward="true" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -299,7 +313,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/sqlalchemy/sql/expression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="720">
               <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
@@ -308,7 +322,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="672">
               <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
               <folding>
                 <element signature="e#0#83#0" expanded="true" />
@@ -340,10 +354,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rema</find>
-      <find>fromUse</find>
-      <find>开始回复</find>
-      <find>remar</find>
       <find>remak</find>
       <find>RemarkName</find>
       <find>是的</find>
@@ -370,6 +380,10 @@
       <find>item_title</find>
       <find>看这里</find>
       <find>cmd</find>
+      <find>zk_final</find>
+      <find>全猫</find>
+      <find>coupon_info</find>
+      <find>replyfn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -392,11 +406,11 @@
         <option value="$PROJECT_DIR$/other/getPIDFromExcel.py" />
         <option value="$PROJECT_DIR$/ZK_Model/goodsModel.py" />
         <option value="$PROJECT_DIR$/ZK_Model/globalModel.py" />
-        <option value="$PROJECT_DIR$/ZK_QueryOrder.py" />
         <option value="$PROJECT_DIR$/queryGoods.py" />
-        <option value="$PROJECT_DIR$/weichatRobot.py" />
         <option value="$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py" />
+        <option value="$PROJECT_DIR$/ZK_QueryOrder.py" />
         <option value="$PROJECT_DIR$/zk_WiChatReplay.py" />
+        <option value="$PROJECT_DIR$/weichatRobot.py" />
       </list>
     </option>
   </component>
@@ -411,7 +425,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -433,6 +446,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -597,12 +611,12 @@
     <frame x="0" y="23" width="1280" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49448124" visible="true" weight="0.20274636" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49448124" visible="true" weight="0.20597738" />
       <window_info id="Structure" order="1" sideWeight="0.50551873" side_tool="true" weight="0.12520194" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32980332" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49761903" visible="true" weight="0.44992527" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49761903" visible="true" weight="0.3168909" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3974262" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -744,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nohup.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QR.png" />
     <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/itchat/__init__.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/itchat/core.py" />
@@ -768,6 +775,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/sqlalchemy/sql/expression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/queryGoods.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2176">
@@ -778,47 +802,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/sqlalchemy/sql/expression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ZK_QueryOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ZK_Model/ZKOrderDataModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zk_WiChatReplay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
+        <state relative-caret-position="126">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nohup.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZK_QueryOrder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="143" column="21" lean-forward="true" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weichatRobot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="246" column="12" selection-start-line="246" selection-start-column="12" selection-end-line="246" selection-end-column="12" />
+        <state relative-caret-position="138">
+          <caret line="248" column="31" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

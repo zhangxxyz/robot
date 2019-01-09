@@ -14,7 +14,7 @@ def successReplay(dict):
         money = re.findall('\d+', copupon)
         if beforeCouponPrice >= float(money[0]):
             beforeCouponPrice = beforeCouponPrice - float(money[1])
-    except Exception as  error:
+    except Exception as error:
         print(error)
         print('查到商品并且回复的错误')
         pass
