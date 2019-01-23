@@ -246,7 +246,7 @@ def getFriendData(key, array):
 # 抓订单
 def getOrder():
     global timer
-    timer = threading.Timer(900, getOrder)
+    timer = threading.Timer(922, getOrder)
     timer.setDaemon(True)
     timer.start()
     print('循环抓订单')
