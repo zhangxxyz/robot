@@ -67,20 +67,22 @@ def text_reply(msg):
         if str(str(msg.text)).find(i) >=0:
             print('发现转账成功字样')
             return
-    p = queryGoods.zhuanLian(str(msg.text), use_pid=msg.User.RemarkName)
+    # p = queryGoods.zhuanLian(str(msg.text), use_pid=msg.User.RemarkName)
     time.sleep(1)
+    p = {}
     try:
         if p['result']:
             replayContent = zk_WiChatReplay.successReplay(p['data'])
             print(replayContent)
             return replayContent
     except Exception as Error:
-        errDesc = p['error']
+        errDesc = p.get('error',"1")
         replayMsg = ""
         if int(errDesc) == 6001:
             replayMsg = '您好,分享给我商品链接,我才能帮助您省钱哦～～～'
         else:
             replayMsg = "抱歉,该商家暂无优惠活动,您可以换一家试试"
+        replayMsg = "您好,小淘目前正在进行华丽升级,暂时只能提现哦,\n小淘将会在3月初重新开放,届时将会支持京东,拼多多哦,也会推出一些列的优惠活动,敬请期待"
         temp = zk_WiChatReplay.other_replay(msg)
         print('当前要发送的消息',temp)
         if temp:
@@ -246,7 +248,7 @@ def getFriendData(key, array):
 # 抓订单
 def getOrder():
     global timer
-    timer = threading.Timer(922, getOrder)
+    timer = threading.Timer(1188, getOrder)
     timer.setDaemon(True)
     timer.start()
     print('循环抓订单')
